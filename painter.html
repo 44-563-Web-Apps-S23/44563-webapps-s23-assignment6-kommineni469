@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Intro to javascript</title>
+</head>
+ 
+<body>
+<h1> Painter entry Kommineni Bharath</h1>
+<h2>Getting input</h2>
+
+<form>
+    <label for="Name"Name>Name of the Painter </label>
+    <input type ="password" id="Name" name="Name"  value = "Monet"> <br>
+
+    <label for="form1_nick">Find the Painter </label>
+    <input type ="text" id="Find" name="Find" autofocus> <br>
+
+    <input type="button" onclick="checkPainter()" value="Get values from form">
+</form>
+
+
+<p id="result">This text will be replaced </p>
+
+<script>
+let good=0
+let oops=0 
+
+function checkPainter (){
+    console.log("Getting form values")
+    name = document.getElementById("Name").value
+    find = document.getElementById("Find").value
+    
+    if(name == find){
+        alert("You got it right")
+        good++
+    } else {
+        alert("Sorry")
+        oops++
+    }
+    document.getElementById("result").innerHTML = "Good count: "+good+" oops count: "+oops
+}
+</script>
+
+</body>
+</html> 
