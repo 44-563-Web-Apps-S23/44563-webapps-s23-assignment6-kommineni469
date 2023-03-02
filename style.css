@@ -1,0 +1,24 @@
+.form-group label{
+    display: block;
+}
+input{
+    margin-top: 5px;
+}
+img{
+    height: 100px;
+    width: 100px;
+    border:0.5px solid rgba(23, 67, 227, 0.954);
+    border-radius: 3px;
+}
+h2{
+    text-align: center;
+    color: cornsilk;
+    background-color: slategray;
+}
+label span{
+    margin: 2px;
+    background-color: aquamarine;
+}
+input[type='radio']{
+    background-color: #91f7f7;
+}
